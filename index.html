@@ -52,7 +52,7 @@
     </header>
     <main>
       <section class="h-screen">
-        <div class="container px-6 max-w-7xl mx-auto h-full flex">
+        <div class="container px-6 max-w-7xl mx-auto h-full flex justify-between relative">
           <div class="inline-flex flex-col justify-center items-center gap-6 items-center lg:items-start h-full ">
             <h3 class="text-center lg:text-left font-semibold text-base md:text-2xl text-neutral-500 tracking-wide">
               Hi, I am
@@ -61,7 +61,7 @@
               Daniil Guyumjyan
             </h2>
             <h1
-              class="text-center lg:text-left lg:whitespace-nowrap  text-5xl bg-linear-to-r from-[var(--c-theme-dark)] via-[var(--c-theme-light)] to-[var(--c-theme-dark)] leading-[1.2] tracking-wide text-transparent bg-clip-text inline-block">
+              class="text-center lg:text-left lg:whitespace-nowrap  text-5xl bg-linear-to-r from-[var(--c-theme-dark)] via-[var(--c-theme-light)] to-[var(--c-theme-dark)] leading-[1.2] tracking-wide text-transparent bg-clip-text inline-block font-bold">
               Frontend Developer
             </h1>
             <div
@@ -84,33 +84,34 @@
               </button>
             </div>
             <div
-              class="bg-white/4 grid grid-cols-3 divide-x-2 *:py-3 *:px-4 text-neutral-400 *:flex *:flex-col *:items-start *:fixed-col *:justify-start *:gap-2 rounded-lg">
+              class="bg-white/4 grid grid-cols-3 divide-x-2 *:py-3 *:px-4 text-neutral-400 *:flex *:flex-col *:items-start *:fixed-col *:justify-start *:gap-2 rounded-lg md:*:text-lg">
               <div class="">
                 <span
-                  class="text-[var(--c-theme-light)] text-2xl font-extrabold tracking-wide"
+                  class="text-[var(--c-theme-light)] text-3xl font-extrabold tracking-wide"
                   >5+</span
                 >
                 <span>Experiences</span>
               </div>
               <div class="">
                 <span
-                  class="text-[var(--c-theme-light)] text-2xl font-extrabold tracking-wide"
+                  class="text-[var(--c-theme-light)] text-3xl font-extrabold tracking-wide"
                   >20+</span
                 >
                 <span>Project Done</span>
               </div>
               <div class="">
                 <span
-                  class="text-[var(--c-theme-light)] text-2xl font-extrabold tracking-wide"
-                  >80+</span
-                >
+                  class="text-[var(--c-theme-light)] text-3xl font-extrabold tracking-wide"
+                  >80+</span>
                 <span>Happy clients</span>
               </div>
             </div>
           </div>
-          <div class="lg:w-1/2 lg:self-stratch flex flex-col justify-center items-end justify-center lg:items-end">
-            <div class="overflow-hidden h-8/10"></div>
-            <img class="h-9/10" src="vajni chel.png" alt="">
+          <div class="hidden lg:block absolute right-0 h-full -z-1">
+            <div class="overflow-hidden aspect-[3/4] h-8/10 rounded-full absolute right-0">
+              <div class="bg-white/4 w-full aspect-square absolute rounded-full bottom-0"></div>
+              <img class="h-9/10 absolute bottom-0 left-1/2 -translate-x-1/2" src="vajni chel.png" alt="">
+            </div>
           </div>
         </div>
       </section>
